@@ -11,6 +11,14 @@ body {
   background-color: #f9f6ee;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   height: 100vh;
@@ -34,7 +42,7 @@ nav div.sidebar-content {
 
 .home-item,
 #projects-nav {
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -59,7 +67,7 @@ main.main {
 }
 
 .main-content {
-  background-color: #f5f4f2;
+  background-color: #ca92220a;
   display: flex;
   width: 100%;
   align-items: center;
@@ -85,22 +93,27 @@ header.header {
 }
 
 .task-checkbox-circle {
-  /* background-color: blue; */
   width: 14px;
   height: 14px;
   border-radius: 50%;
   border: 1px solid black;
 }
 
+.tasks {
+  width: 75%;
+}
+
+.task {
+  border-bottom: 1px solid var(--raven);
+  padding: 0.3rem;
+  margin: 0 12px;
+}
+
 .task,
 .add-task {
   display: flex;
-  gap: 10px;
   align-items: center;
-  padding: 0.3rem;
   font-size: 1.5rem;
-  border-bottom: 1px solid var(--oslo-gray);
-  min-width: 500px;
 }
 
 .add-task {
@@ -108,9 +121,15 @@ header.header {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+  justify-content: end;
+  margin-top: 1rem;
 }
 
-.add-task-description:before {
+.add-task li {
+  margin-left: 0.5rem;
+}
+.task-description {
+  margin-left: 0.5rem;
 }
 
 .icon-plus {

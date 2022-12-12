@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimado</title>
     <link rel="stylesheet" href="../src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -17,41 +21,39 @@
       <main class="main" id="main-container">
         <nav class="navbar">
           <div class="sidebar-content">
-            <section id="home-nav">
-              <div class="home-item">😀 All</div>
-              <div class="home-item">📧 Inbox</div>
-              <div class="home-item">🕙 Today</div>
-              <div class="home-item">😮 Next 7 Days</div>
-            </section>
-            <section id="projects-nav">
-              <h1>Projects</h1>
-            </section>
+            <ul id="home-nav">
+              <li class="home-item inbox">Inbox</li>
+              <li class="home-item today">Today</li>
+            </ul>
+            <ul id="projects-nav">
+              <li>Projects</li>
+            </ul>
           </div>
         </nav>
         <div class="main-content">
           <div class="tasks">
-            <div class="task">
+            <ul class="task">
               <div class="task-checkbox-circle"></div>
-              <div class="task-description">Umyj umywalkę</div>
-            </div>
+              <li class="task-description">Umyj umywalkę</li>
+            </ul>
 
-            <div class="task">
+            <ul class="task">
               <div class="task-checkbox-circle"></div>
-              <div class="task-description">Wyrzuć śmieci</div>
-            </div>
+              <li class="task-description">Wyrzuć śmieci</li>
+            </ul>
 
-            <div class="task">
+            <ul class="task">
               <div class="task-checkbox-circle"></div>
-              <div class="task-description">Wyprowadź Psa</div>
-            </div>
+              <li class="task-description">Wyprowadź Psa</li>
+            </ul>
 
-            <div class="task">
+            <ul class="task">
               <div class="task-checkbox-circle"></div>
-              <div class="task-description">Upierz ręczniki</div>
-            </div>
-            <div class="add-task">
-              <div class="icon-plus"></div>
-              <div class="add-task-description">Dodaj zadanie..</div>
+              <li class="task-description">Upierz ręczniki</li>
+            </ul>
+            <ul class="add-task">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <li class="add-task-description">Dodaj zadanie..</li>
             </div>
           </div>
         </div>
